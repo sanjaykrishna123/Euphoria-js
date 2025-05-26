@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Euphoria</title>
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- linking swiper css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    </head>
+    <body>
+        <div id="main">
+            <section class="wrapper">
+                <header>
+                    <h1>
+                        <a href="#">
+                            <img src="./assets/Logo.svg" alt="logo" />
+                        </a>
+                    </h1>
+
+                    <ul class="pages" id="website-pages">
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">Men</a>
+                        </li>
+                        <li>
+                            <a href="#">Women</a>
+                        </li>
+                        <li>
+                            <a href="#">Combos</a>
+                        </li>
+                        <li>
+                            <a href="#">Joggers</a>
+                        </li>
+                    </ul>
+
+                    <div class="forInput">
+                        <input type="text" placeholder="Search" />
+                        <img src="./assets/search.svg" alt="search-icon" />
+                    </div>
+
+                    <div class="extras">
+                        <a href="#">
+                            <div class="background">
+                                <img src="./assets/wishlist.svg" alt="wishlist-icon" />
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="background">
+                                <img src="./assets/account.svg" alt="profile-icon" />
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="background">
+                                <img src="./assets/cart.svg" alt="cart-icon" />
+                            </div>
+                        </a>
+                    </div>
+
+                    <ul class="responsiveContainer">
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">Men</a>
+                        </li>
+                        <li>
+                            <a href="#">Women</a>
+                        </li>
+                        <li>
+                            <a href="#">Combos</a>
+                        </li>
+                        <li>
+                            <a href="#">Joggers</a>
+                        </li>
+                    </ul>
+
+                    <img src="./assets/bars-solid.svg" alt="navigation-bar" class="navigation-menu">
+                </header>
+            </section>
+
+            <div id="slider">
+                <div class="slides">
+                    <div class="slide fade">
+                        <div class="spotlightContainer">
+                            <div class="spotlightText">
+                                <p>T-Shirt / Tops</p>
+
+                                <h2>Summer <br> Value Pack</h2>
+
+                                <p>cool / colorful / comfy</p>
+                            </div>
+
+                            <a href="#">
+                                <button class="shop">Shop Now</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="slide fade">
+                        <div class="spotlightContainer">
+                            <div class="spotlightText">
+                                <p>T-Shirt / Tops</p>
+
+                                <h2>Summer <br> Value Pack</h2>
+
+                                <p>cool / colorful / comfy</p>
+                            </div>
+
+                            <a href="#">
+                                <button class="shop">Shop Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <img src="./assets/left-arrow-bold.svg" alt="prev-icon" class="prevIcon" onclick="plusSlides(-1)" />
+                    <img src="./assets/right-arrow-bold.svg" alt="next-icon" class="nextIcon" onclick="plusSlides(1)" />
+                </div>
+            </div>
+
+            <section class="wrapper">
+                <div class="miniSpotlight">
+                    <div class="left">
+                        <div class="textContainer">
+                            <p class="description">Low Price</p>
+                            <h2>High Coziness</h2>
+                            <p class="off">UPTO 50% OFF</p>
+                            <a href="#">Explore Items</a>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="textContainer">
+                            <p class="description">Beyoung Presents</p>
+                            <h2>Breezy Summer <br> Style</h2>
+                            <p class="off">UPTO 50% OFF</p>
+                            <a href="#">Explore Items</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="newArrival">
+                    <div class="headingContainer">
+                        <div class="iconContainer"></div>
+
+                        <h1>New Arrival</h1>
+                    </div>
+
+                    <div class="swiper-container">
+                        <div class="controls">
+                            <button class="swiper-button-prev">
+                                <img src="./assets/arrow-left.svg" alt="prev-icon">
+                            </button>
+                            <button class="swiper-button-next">
+                                <img src="./assets/arrow-right.svg" alt="next-icon">
+                            </button>
+                        </div>
+                        <div class="mySwiper swiper">
+                            <ul class="mySwiper-wrapper swiper-wrapper">
+                                <li class="mySwiper-slide swiper-slide">
+                                    <img src="./assets/img-1.jpg" alt="slide-image">
+                                    <p>Knitted Joggers</p>
+                                </li>
+                                <li class="mySwiper-slide swiper-slide">
+                                    <img src="./assets/img-2.jpg" alt="slide-image">
+                                    <p>Urban Shirts</p>
+                                </li>
+                                <li class="mySwiper-slide swiper-slide">
+                                    <img src="./assets/img-3.jpg" alt="slide-image">
+                                    <p>Full Sleeve</p>
+                                </li>
+                                <li class="mySwiper-slide swiper-slide">
+                                    <img src="./assets/img-4.jpg" alt="slide-image">
+                                    <p>Active T-Shirts</p>
+                                </li>
+                                <li class="mySwiper-slide swiper-slide">
+                                    <img src="./assets/img-3.jpg" alt="slide-image">
+                                    <p>Full Sleeve</p>
+                                </li>
+                                <li class="mySwiper-slide swiper-slide">
+                                    <img src="./assets/img-1.jpg" alt="slide-image">
+                                    <p>Knitted Joggers</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fashionContainer">
+                    <div class="leftContainer">
+                        <div class="textContainer">
+                            <h2>
+                                WE MADE YOUR EVERYDAY <br>
+                                FASHION BETTER!
+                            </h2>
+
+                            <p>
+                                In our journey to improve everyday fashion, <br>
+                                euphoria presents EVERYDAY wear range - <br>
+                                Comfortable & Affordable fashion 24/7
+                            </p>
+
+                            <a href="#">
+                                <button>Shop Now</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="rightContainer"></div>
+                </div>
+
+                <div class="categoriesForMen">
+                    <div class="headingContainer">
+                        <div class="iconContainer"></div>
+
+                        <h1>Categories For Men</h1>
+                    </div>
+
+                    <div class="itemsContainer">
+                        <div class="itemContainer" data-gender="Men">
+                            <img src="./assets/img-5.jpg" alt="image">
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>Shirts</h4>
+                                    <a href="./details.html" class="explore nextPage" >Explore now!</a>
+                                </div>
+
+                                <a href="./details.html" class="nextPage">
+                                    <img src="./assets/arrow-right.svg" alt="arrow-icon">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="itemContainer" data-gender="Men">
+                            <img src="./assets/img-6.jpg" alt="image">
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>Printed T-Shirts</h4>
+                                    <a href="./details.html" class="explore nextPage">Explore now!</a>
+                                </div>
+
+                                <a href="./details.html" class="nextPage">
+                                    <img src="./assets/arrow-right.svg" alt="arrow-icon">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="itemContainer" data-gender="Men">
+                            <img src="./assets/img-7.jpg" alt="image">
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>Plain T-Shirt</h4>
+                                    <a href="./details.html" class="explore nextPage">Explore now!</a>
+                                </div>
+
+                                <a href="./details.html" class="nextPage">
+                                    <img src="./assets/arrow-right.svg" alt="arrow-icon">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="itemContainer" data-gender="Men">
+                            <img src="./assets/img-8.jpg" alt="image">
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>Polo T-Shirt</h4>
+                                    <a href="./details.html" class="explore nextPage">Explore now!</a>
+                                </div>
+
+                                <a href="./details.html" class="nextPage">
+                                    <img src="./assets/arrow-right.svg" alt="arrow-icon">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="itemContainer" data-gender="Men">
+                            <img src="./assets/img-9.jpg" alt="image">
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>Hoodies & Sweetshirt</h4>
+                                    <a href="./details.html" class="explore nextPage">Explore now!</a>
+                                </div>
+
+                                <a href="./details.html" class="nextPage">
+                                    <img src="./assets/arrow-right.svg" alt="arrow-icon">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="itemContainer" data-gender="Men">
+                            <img src="./assets/img-10.jpg" alt="image">
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>Jeans</h4>
+                                    <a href="./details.html" class="explore nextPage">Explore now!</a>
+                                </div>
+
+                                <a href="./details.html" class="nextPage">
+                                    <img src="./assets/arrow-right.svg" alt="arrow-icon">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="itemContainer" data-gender="Men">
+                            <img src="./assets/img-11.jpg" alt="image">
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>Activewear</h4>
+                                    <a href="./details.html" class="explore nextPage">Explore now!</a>
+                                </div>
+
+                                <a href="./details.html" class="nextPage">
+                                    <img src="./assets/arrow-right.svg" alt="arrow-icon">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="itemContainer" data-gender="Men">
+                            <img src="./assets/img-11.jpg" alt="image">
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>Boxers</h4>
+                                    <a href="./details.html" class="explore nextPage">Explore now!</a>
+                                </div>
+
+                                <a href="./details.html" class="nextPage">
+                                    <img src="./assets/arrow-right.svg" alt="arrow-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoriesForWomen">
+                    <div class="headingContainer">
+                        <div class="iconContainer"></div>
+
+                        <h1>Categories for Women</h1>
+                    </div>
+
+                    <div class="itemsContainer">
+                        <div class="itemContainer" data-gender="Women">
+                            <img src="./assets/img-12.jpg" alt="image">
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>Hoodies & Sweetshirt</h4>
+                                    <a href="./details.html" class="explore nextPage">Explore now!</a>
+                                </div>
+
+                                <a href="./details.html" class="nextPage">
+                                    <img src="./assets/arrow-right.svg" alt="arrow-icon">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="itemContainer" data-gender="Women">
+                            <img src="./assets/img-13.jpg" alt="image">
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>Coats & Parkas</h4>
+                                    <a href="./details.html" class="explore nextPage">Explore now!</a>
+                                </div>
+
+                                <a href="./details.html" class="nextPage">
+                                    <img src="./assets/arrow-right.svg" alt="arrow-icon">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="itemContainer" data-gender="Women">
+                            <img src="./assets/img-14.jpg" alt="image">
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>Tees & T-Shirt</h4>
+                                    <a href="./details.html" class="explore nextPage">Explore now!</a>
+                                </div>
+
+                                <a href="./details.html" class="nextPage">
+                                    <img src="./assets/arrow-right.svg" alt="arrow-icon">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="itemContainer" data-gender="Women">
+                            <img src="./assets/img-15.jpg" alt="image">
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>Boxers</h4>
+                                    <a href="./details.html" class="explore nextPage">Explore now!</a>
+                                </div>
+
+                                <a href="./details.html" class="nextPage">
+                                    <img src="./assets/arrow-right.svg" alt="arrow-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="brands">
+                    <h2>Top Brands Deal</h2>
+                    <p>Up To <span>60%</span> off on brands</p>
+                    <div class="brandsImages">
+                        <div class="imageContainer">
+                            <a href="#">
+                                <img src="./assets/nike.jpg" alt="image">
+                            </a>
+                        </div>
+
+                        <div class="imageContainer">
+                            <a href="#">
+                                <img src="./assets/H&M.jpg" alt="image">
+                            </a>
+                        </div>
+
+                        <div class="imageContainer">
+                            <a href="#">
+                                <img src="./assets/levis.jpg" alt="image">
+                            </a>
+                        </div>
+
+                        <div class="imageContainer">
+                            <a href="#">
+                                <img src="./assets/USPA.jpg" alt="image">
+                            </a>
+                        </div>
+
+                        <div class="imageContainer">
+                            <a href="#">
+                                <img src="./assets/puma.jpg" alt="image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="limeLight">
+                    <div class="headingContainer">
+                        <div class="iconContainer"></div>
+                        <h1>In The Limelight</h1>
+                    </div>
+
+                    <div class="itemsContainer">
+                        <div class="itemContainer">
+                            <div class="imageContainer">
+                                <img src="./assets/img-16.jpg" alt="image">
+
+                                <div class="likeButton">
+                                    <img src="./assets/wishlist.svg" alt="like-icon">
+                                </div>
+                            </div>
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>Black Sweatshirt with ...</h4>
+                                    <p class="brandName">Jhanvi's Brand</p>
+                                </div>
+                                
+                                <div class="priceContainer">
+                                    <p class="price">$123.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemContainer">
+                            <div class="imageContainer">
+                                <img src="./assets/img-17.jpg" alt="image">
+
+                                <div class="likeButton">
+                                    <img src="./assets/wishlist.svg" alt="like-icon">
+                                </div>
+                            </div>
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>line Pattern Black H...</h4>
+                                    <p class="brandName">AS's Brand</p>
+                                </div>
+                                
+                                <div class="priceContainer">
+                                    <p class="price">$37.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemContainer">
+                            <div class="imageContainer">
+                                <img src="./assets/img-18.jpg" alt="image">
+
+                                <div class="likeButton">
+                                    <img src="./assets/wishlist.svg" alt="like-icon">
+                                </div>
+                            </div>
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>Black Shorts</h4>
+                                    <p class="brandName">MM's Brand</p>
+                                </div>
+                                
+                                <div class="priceContainer">
+                                    <p class="price">$37.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemContainer">
+                            <div class="imageContainer">
+                                <img src="./assets/img-19.jpg" alt="image">
+
+                                <div class="likeButton">
+                                    <img src="./assets/wishlist.svg" alt="like-icon">
+                                </div>
+                            </div>
+
+                            <div class="detailsContainer">
+                                <div class="textContainer">
+                                    <h4>Levender Hoodie with ...</h4>
+                                    <p class="brandName">Nike's Brand</p>
+                                </div>
+                                
+                                <div class="priceContainer">
+                                    <p class="price">$119.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="feedback">
+                    <div class="headingContainer">
+                        <div class="iconContainer"></div>
+                        <h1>Feedback</h1>
+                    </div>
+
+                    <div class="feedbackContainer swiper">
+                        <ul class="feedbackList swiper-wrapper">
+                            <li class="feedback swiper-slide">
+                                <div class="user">
+                                    <div class="left">
+                                        <img src="./assets/span-1.svg" alt="image">
+                                        <h4>Floyd Miles</h4>
+                                    </div>
+
+                                    <div class="right">
+                                        <img src="./assets/fullStar.png" alt="star-icon">
+                                        <img src="./assets/fullStar.png" alt="star-icon">
+                                        <img src="./assets/fullStar.png" alt="star-icon">
+                                        <img src="./assets/halfStar.png" alt="star-icon">
+                                        <img src="./assets/noStar.png" alt="star-icon">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                                    Velit officia consequat duis enim velit mollit. 
+                                    Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est 
+                                    sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                                    Exercitation veniam consequat sunt nostrud amet.
+                                </p>
+                            </li>
+
+                            <li class="feedback swiper-slide">
+                                <div class="user">
+                                    <div class="left">
+                                        <img src="./assets/span-2.svg" alt="image">
+                                        <h4>Ronald Richards</h4>
+                                    </div>
+
+                                    <div class="right">
+                                        <img src="./assets/fullStar.png" alt="star-icon">
+                                        <img src="./assets/fullStar.png" alt="star-icon">
+                                        <img src="./assets/fullStar.png" alt="star-icon">
+                                        <img src="./assets/fullStar.png" alt="star-icon">
+                                        <img src="./assets/noStar.png" alt="star-icon">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                                    Exercitation veniam consequat sunt nostrud amet.
+                                </p>
+                            </li>
+
+                            <li class="feedback swiper-slide">
+                                <div class="user">
+                                    <div class="left">
+                                        <img src="./assets/span-3.svg" alt="image">
+                                        <h4>Savannah Nguyen</h4>
+                                    </div>
+
+                                    <div class="right">
+                                        <img src="./assets/fullStar.png" alt="star-icon">
+                                        <img src="./assets/fullStar.png" alt="star-icon">
+                                        <img src="./assets/fullStar.png" alt="star-icon">
+                                        <img src="./assets/halfStar.png" alt="star-icon">
+                                        <img src="./assets/noStar.png" alt="star-icon">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                                    Velit officia consequat duis enim velit mollit. 
+                                    Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est 
+                                    sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                                    Exercitation veniam consequat sunt nostrud amet.
+                                </p>
+                            </li>
+
+                            <li class="feedback swiper-slide">
+                                <div class="user">
+                                    <div class="left">
+                                        <img src="./assets/span-2.svg" alt="image">
+                                        <h4>Ronald Richards</h4>
+                                    </div>
+
+                                    <div class="right">
+                                        <img src="./assets/fullStar.png" alt="star-icon">
+                                        <img src="./assets/fullStar.png" alt="star-icon">
+                                        <img src="./assets/fullStar.png" alt="star-icon">
+                                        <img src="./assets/fullStar.png" alt="star-icon">
+                                        <img src="./assets/noStar.png" alt="star-icon">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                                    Exercitation veniam consequat sunt nostrud amet.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <section class="wrapper">
+                    <div class="topContainer">
+                        <div class="row">
+                            <h2>Need Help</h2>
+                            <a href="#">Contact Us</a>
+                            <a href="#">Track Order</a>
+                            <a href="#">Returns & Refunds</a>
+                            <a href="#">FAQ's</a>
+                            <a href="#">Career</a>
+                        </div>
+
+                        <div class="row">
+                            <h2>Company</h2>
+                            <a href="#">About Us</a>
+                            <a href="#">euphoria Blog</a>
+                            <a href="#">euphoriastan</a>
+                            <a href="#">Collaboration</a>
+                            <a href="#">Media</a>
+                        </div>
+
+                        <div class="row">
+                            <h2>More Info</h2>
+                            <a href="#">Terms and Conditions</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Shipping Policy</a>
+                            <a href="#">Sitemap</a>
+                        </div>
+
+                        <div class="row">
+                            <h2>Location</h2>
+                            <a href="#">support@euphoria.in</a>
+                            <a href="#">Eklingpura Chouraha, Ahmedabad Main Road</a>
+                            <a href="#">(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</a>
+                        </div>
+                    </div>
+
+                    <div class="socialMediaContainer">
+                        <div class="left">
+                            <a href="#">
+                                <div class="socialMedia" id="facebook">
+                                    <img src="./assets/facebook.svg" alt="socialMedia" class="facebook">
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="socialMedia" id="instagram">
+                                    <img src="./assets/instagram.svg" alt="socialMedia" class="instagram">
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="socialMedia" id="twitter">
+                                    <img src="./assets/twitter.svg" alt="socialMedia" class="twitter">
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="socialMedia" id="linked-in">
+                                    <img src="./assets/linkedin.svg" alt="socialMedia" class="linked-in">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="right">
+                            <h2>Download The App</h2>
+
+                            <div class="storesContainer">
+                                <a href="#">
+                                    <div class="storeContainer">
+                                        <img src="./assets/playstore.svg" alt="playstore">
+    
+                                        <div class="textContainer">
+                                            <p>android app on</p>
+                                            <h4>Google Play</h4>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="storeContainer">
+                                        <img src="./assets/phone.svg" alt="appstore">
+    
+                                        <div class="textContainer">
+                                            <p>available on the</p>
+                                            <h4>App Store</h4>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="popularCategories">
+                        <div class="temp">
+                            <h2 class="text" id="extraDetails2">Popular Categories</h2>
+                            <img src="./assets/Icon.png" alt="down-arrow" id="extraDetails">
+                        </div>
+
+                        <div class="extraDetails">
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Track Order</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns & Refunds</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ's</a>
+                            </li>
+                            <li>
+                                <a href="Career"></a>
+                            </li>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <p class="Copyright">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+                </section>
+            </footer>
+        </div>
+
+
+        <!-- linking swiper js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
