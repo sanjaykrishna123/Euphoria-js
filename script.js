@@ -110,3 +110,13 @@ document.addEventListener("DOMContentLoaded", ()=> {
     })
   })
 })
+
+document.getElementById("searchInput").addEventListener("keyup", function(){
+  const filter = this.value.toLowerCase();
+  const listItems = document.querySelectorAll(".itemsContainer .itemContainer");
+
+  listItems.forEach(item => {
+    const text = item.textContent.toLowerCase();
+    item.style.display = text.includes(filter) ? "" : "none";
+  });
+})
