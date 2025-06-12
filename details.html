@@ -11,7 +11,7 @@
         <section class="wrapper">
             <header>
                 <h1>
-                    <a href="#">
+                    <a href="./index.html">
                         <img src="./assets/Logo.svg" alt="logo" />
                     </a>
                 </h1>
@@ -263,7 +263,7 @@
 
                             <div class="eachContainer">
                                 <div class="titleContainer">
-                                    <p class="titleText">User commments</p>
+                                    <p class="titleText">User comments</p>
                                     <div class="forCount">
                                         <p>21</p>
                                     </div>
@@ -274,7 +274,7 @@
 
                             <div class="eachContainer">
                                 <div class="titleContainer">
-                                    <p class="titleText">Questoin & Answer</p>
+                                    <p class="titleText">Question & Answer</p>
                                     <div class="forCount" style="background-color: #3c4242;">
                                         <p>4</p>
                                     </div>
@@ -335,7 +335,7 @@
                     </div>
 
                     <div class="itemsContainer" style="margin-top: -70px;">
-                        <div class="itemContainer">
+                        <a class="itemContainer nextPage" href="./details.html" data-gender="female">
                             <div class="imageContainer">
                                 <img src="./assets/img-16.jpg" alt="image">
 
@@ -354,9 +354,9 @@
                                     <p class="price">$123.00</p>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="itemContainer">
+                        <a class="itemContainer nextPage" href="./details.html" data-gender="female">
                             <div class="imageContainer">
                                 <img src="./assets/img-17.jpg" alt="image">
 
@@ -375,9 +375,9 @@
                                     <p class="price">$37.00</p>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="itemContainer">
+                        <a class="itemContainer nextPage" href="./details.html" data-gender="female">
                             <div class="imageContainer">
                                 <img src="./assets/img-18.jpg" alt="image">
 
@@ -396,9 +396,9 @@
                                     <p class="price">$37.00</p>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="itemContainer">
+                        <a class="itemContainer nextPage" href="./details.html" data-gender="female">
                             <div class="imageContainer">
                                 <img src="./assets/img-19.jpg" alt="image">
 
@@ -417,7 +417,7 @@
                                     <p class="price">$119.00</p>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -658,6 +658,23 @@
         navigationMenu.addEventListener('click', ()=> {
             let responsiveContainer = document.querySelector('.responsiveContainer');
             responsiveContainer.classList.toggle('active');
+        })
+
+        links = document.querySelectorAll('.itemsContainer .nextPage');
+        links.forEach((link)=> {
+            link.addEventListener('click', function(e){
+            e.preventDefault();
+
+            let img = this.querySelector('img');
+            let src = img ? img.getAttribute('src'): null;
+            let gender = this.dataset.gender;
+
+            if(src){
+                sessionStorage.setItem('imgSrc', src);
+                sessionStorage.setItem('gender', gender);
+                location.href = 'details.html';
+            }
+            })
         })
     </script>
 </body>
