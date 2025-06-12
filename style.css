@@ -384,6 +384,7 @@ button.shop{
 }
 .itemsContainer .itemContainer{
     margin-bottom: 50px;
+    text-decoration: none;
 }
 .itemsContainer .itemContainer .imageContainer img{
     position: relative;
@@ -828,9 +829,6 @@ footer section.wrapper p{
 }
 
 @media (max-width: 990px){
-    section.wrapper{
-        padding: 0 5px;
-    }
     header .responsiveContainer.active{
         right: 0;
     }
@@ -929,8 +927,15 @@ footer section.wrapper p{
 }
 
 @media (max-width: 600px){
-    #slider{
-        display: none;
+    #slider .slides .slide .spotlightContainer{
+        margin: 100px 0 0 100px;
+    }
+    #slider .slides .slide .spotlightContainer .spotlightText p{
+        font-size: 24px !important;
+    }
+    #slider .slides .slide .spotlightContainer .spotlightText h2{
+        margin: 15px 0;
+        font-size: 50px !important;
     }
     #feedback .feedbackContainer .feedbackList .feedback .user .left h4{
         font-size: 16px;
@@ -1483,9 +1488,6 @@ footer section.wrapper p{
 }
 
 @media(max-width: 990px){
-    section.wrapper{
-        padding: 0 5px !important;
-    }
     #main .mainContainer .topContainer .rightContainer .bottomContainer{
         display: flex;
         flex-direction: column;
